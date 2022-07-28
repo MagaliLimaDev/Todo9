@@ -1,0 +1,13 @@
+.separador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.separador>div{
+    width: 300px;
+    border-bottom: 1px solid #707070;
+}

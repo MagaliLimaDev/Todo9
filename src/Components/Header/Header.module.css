@@ -1,0 +1,93 @@
+.header{
+    height: 330px;
+    width: 100%;
+    background-color: #d6d3d3dd;
+}
+
+.header::after{
+  content: '';
+  bottom: 10px;
+  top: 328px;
+  height: 11%;
+  transform-origin: right;
+  transform: skewY(3deg);
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.content{
+    text-align: center;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.fraseHeader{
+    padding-top: 50px;
+}
+
+
+.segundaLinha{
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: black;
+}
+
+.primeiraLinha{
+    font-size: 20px;
+    color: black;
+}
+
+.sectionButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.buttons>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: #888888;
+    border-radius: 4px;
+}
+
+@media (max-width: 426px){
+    .buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header{
+        height: 350px;
+    }
+
+    .header::after{
+        bottom: 10px;
+        top: 350px;
+    }
+
+    .content{
+        text-align: start;
+        margin-left: 16px;
+    }
+
+    .content>section>p{
+        width: 90%;
+    }
+    
+}

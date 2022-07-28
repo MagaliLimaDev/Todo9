@@ -1,0 +1,40 @@
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 30px
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.content>button{
+    text-align: center;
+    width: 15%;
+    height: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    color: #707070;
+    background-color: #FFFFFF;
+    border: #707070 1px solid;
+}
+
+@media(max-width: 426px){
+    .produtos{
+        width: 100%;
+    }
+    .content{
+        flex-direction: column;
+    }
+
+    .content>button{
+        width: 50%;
+    }
+}
